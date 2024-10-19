@@ -5,5 +5,5 @@ from . import models
 class LogsSerializer(serializers.ModelSerializer):
 
     class Meta:
-        fields = ('nombre', 'descripcion', 'accion','time')
+        fields = ('nombre', 'curso', 'identificacion','time')
         model = models.Logs

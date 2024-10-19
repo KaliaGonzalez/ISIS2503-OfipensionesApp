@@ -33,12 +33,14 @@
       <div class="collapse navbar-light bg-light" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/logs_ofipensiones/">Logs</a>
+            <a class="nav-link" href="{% url 'logs_list' %}">Estudiantess</a>
           </li>
         </ul>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/logcreate/">Creacion de Logs</a>
+            <a class="nav-link" href="{% url 'log_create' %}"
+              >Creación de Registro de Estudiantes</a
+            >
           </li>
         </ul>
       </div>

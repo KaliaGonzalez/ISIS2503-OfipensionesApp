@@ -14,12 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.views.decorators.csrf import csrf_exempt
 from django.urls import include, path
 from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path('', include('logs_ofipensiones.urls')),
+    path('logs_ofipensiones/', views.logs_list, name='logs_list'),  # Añadir el nombre a esta ruta
+    path('logcreate/', csrf_exempt(views.log_create), name='log_create'),
     path('health-check/', views.healthCheck),
 ]
