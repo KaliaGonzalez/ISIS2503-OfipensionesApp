@@ -7,7 +7,7 @@ class LogsForm(forms.ModelForm):
         fields = [
             'nombre',
             'curso',
-            'identificacion',
+            'identificacion', 
             #'dateTime',
         ]
 
