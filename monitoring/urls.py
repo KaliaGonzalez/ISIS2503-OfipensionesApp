@@ -21,7 +21,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path('logs_ofipensiones/', views.logs_list, name='logs_list'),  # Añadir el nombre a esta ruta
-    path('logcreate/', csrf_exempt(views.log_create), name='log_create'),
+    path('',include('logs_ofipensiones.urls')),
     path('health-check/', views.healthCheck),
 ]
