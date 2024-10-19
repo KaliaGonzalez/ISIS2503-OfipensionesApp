@@ -17,7 +17,7 @@ def log_create(request):
         form = LogsForm(request.POST)
         if form.is_valid():
             create_Logs(form)
-            messages.add_message(request, messages.SUCCESS, 'Log create successful')
+            messages.add_message(request, messages.SUCCESS, 'Student create successful')
             return HttpResponseRedirect(reverse('logCreate'))
         else:
             print(form.errors)

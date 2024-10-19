@@ -6,14 +6,14 @@ class LogsForm(forms.ModelForm):
         model = Logs
         fields = [
             'nombre',
-            'descripcion',
-            'accion',
+            'curso',
+            'identificacion',
             #'dateTime',
         ]
 
         labels = {
             'nombre' : 'Nombre',
-            'descripcion' : 'Descripcion',
-            'accion' : 'Accion',
+            'curso' : 'Curso',
+            'identificacion' : 'Identificacion',
             #'dateTime' : 'Date Time',
         }
