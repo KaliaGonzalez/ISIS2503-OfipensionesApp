@@ -10,7 +10,7 @@ def logs_list(request):
     context = {
         'logs_list': logs
     }
-    return render(request, 'Logs/Logs.html', context)
+    return render(request, 'Logs.html', context)
 
 def log_create(request):
     if request.method == 'POST':
@@ -28,4 +28,4 @@ def log_create(request):
         'form': form,
     }
 
-    return render(request, 'Logs/LogsCreate.html', context)
+    return render(request, 'LogsCreate.html', context)
